@@ -1,0 +1,23 @@
+INSERT INTO executors (name, type) VALUES ('firstReader', 'reader');
+INSERT INTO executors (name, type) VALUES ('firstWriter', 'writer');
+INSERT INTO executors (name, type) VALUES ('secondReader', 'reader');
+INSERT INTO executors (name, type) VALUES ('secondWriter', 'writer');
+INSERT INTO executors (name, type) VALUES ('thirdReader', 'reader');
+INSERT INTO executors (name, type) VALUES ('thirdWriter', 'writer');
+INSERT INTO executors (name, type) VALUES ('fourthReader', 'reader');
+INSERT INTO executors (name, type) VALUES ('fourthWriter', 'writer');
+
+INSERT INTO tasks (name, executor_id, type, priority) VALUES ('first', 'firstReader', 'read', 1);
+INSERT INTO tasks (name, executor_id, type, priority) VALUES ('second', 'firstWriter', 'write', 1);
+INSERT INTO tasks (name, executor_id, type, priority) VALUES ('third', 'firstReader', 'read', 5);
+INSERT INTO tasks (name, executor_id, type, priority) VALUES ('fourth', 'firstWriter', 'write', 5);
+INSERT INTO tasks (name, executor_id, type, priority) VALUES ('fifth', 'thirdReader', 'read', 2);
+INSERT INTO tasks (name, executor_id, type) VALUES ('sixth', 'fourthWriter', 'write');
+INSERT INTO tasks (name, executor_id, type, priority) VALUES ('seventh', 'fourthReader', 'read', 4);
+INSERT INTO tasks (name, executor_id, type) VALUES ('eighth', 'fourthWriter', 'write');
+INSERT INTO tasks (name, executor_id, type, priority) VALUES ('ninth', 'fourthWriter', 'read', 2);
+INSERT INTO tasks (name, executor_id, type, priority) VALUES ('tenth', 'thirdWriter', 'write', 9);
+INSERT INTO tasks (name, executor_id, type, priority) VALUES ('eleventh', 'secondWriter', 'write', 10);
+INSERT INTO tasks (name, executor_id, type, priority) VALUES ('twelfth', 'secondWriter', 'write', 8);
+INSERT INTO tasks (name, type, priority) VALUES ('thirteenth', 'write', 3);
+INSERT INTO tasks (name, type, priority) VALUES ('fourteenth', 'write', 7);
